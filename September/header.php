@@ -39,7 +39,7 @@
         <div class="wrap">
            
            <div class="bloc-4 logo hiden">
-               <a href="#"><i class="flaticon-paper5"></i></a>
+               <i class="flaticon-paper5"></i>
            </div>
 
            <!--Navigation -->

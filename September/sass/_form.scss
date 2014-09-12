@@ -25,7 +25,7 @@ input[type='text'], textarea{
 
 }
 input[type='text']:hover, textarea:hover{
-    border: 1px solid #000;
+    border: 1px solid $primaire;
 }
 textarea{
     height: 150px!important;
@@ -34,7 +34,7 @@ textarea{
 input.capcha{
     width: 60px;
 }
-input[type='submit'], .bt, input[type='reset'] {
+input[type='submit'], .bt {
     -webkit-appearance: none;  // remove shadow in iOS
     @include border-radius(0);  // remove border-radius in iOS
 
@@ -57,18 +57,4 @@ input[type='submit'], .bt, input[type='reset'] {
 
         cursor: pointer;
     }
-}
-form p{margin: 10px 0 0 0}
-
-#id_rep{
-    width: 20%!important;
-}
-.info_comment{
-    font-weight: 400;
-    margin-top: 20px;
-
-}
-.content_com{
-    font-style: italic;
-    color: $secondaire;
 }
