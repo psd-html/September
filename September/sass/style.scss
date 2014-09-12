@@ -1,0 +1,36 @@
+/* Reset et importation des mixins CSS */
+@import "compass/css3";
+@import "reset";
+
+
+/* @include animate(animation-name, animation-duration, animation-delay); */
+/* voir le projet et instruction: https://github.com/simko-io/animated.sass/blob/master/README.md */
+@import "animated";
+
+@include animation(bounce-in-right); /* pour le personnage sur la page accueil */
+@include animation(flip-in-x); /* pour le personnage sur la page accueil */
+@include animation(fade-in);
+@include animation(bounce-in-left); /* pour le personnage sur la page accueil */
+
+
+/* Largeur, espace entre les blocs et nombre de blocs */
+$wrap: 1160px;
+$gutter: 20px;
+$bloc: 12;
+$max-width: 768px;
+$police: 'Oswald', sans-serif;
+$size: 16px;
+
+$primaire: #666;
+$secondaire: #898787;
+$yellow: #fcd68a;
+
+
+/* importer les éléments du style */
+@import "fonts";
+@import "body";
+@import "header";
+@import "sidebar";
+@import "form";
+@import "footer";
+@import "grid";

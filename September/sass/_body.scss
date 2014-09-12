@@ -1,0 +1,133 @@
+/* style du template */
+
+body{
+    font-family: $police;
+    font-weight: 300;
+    font-size: $size;
+    color: $primaire;
+    background: url('img/bg.jpg') top fixed;
+}
+.page404{
+    margin: 40px auto;
+}
+.yellow{color: $yellow}
+
+/* info */
+.info{
+    background-position: fixed;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    @inclure box-shadow(0px 2px 1px 0px #656565);
+    
+    @include animate(fade-in, .6s, 450ms);
+    
+    
+    .bt {    
+            
+
+            @include border-radius(5px);
+            padding: 11px;
+            text-decoration: none;
+            background: none;
+            border: 1px solid $yellow;
+            color: $yellow;
+
+            cursor: pointer;
+        
+        
+        &:hover {
+
+        background: none;
+        border: 2px solid $yellow;
+        color: $yellow;
+
+        cursor: pointer;
+    }
+
+            }
+    h1{
+        font-size: $size * 4;
+        line-height: 1.4;
+        font-weight: 700;
+        
+    }
+    p{
+        margin-bottom: 30px;
+        font-size: $size * 1.8;
+        line-height: 2;
+        
+    }
+    
+    h1, p{
+        @include text-shadow(3px 3px 2px $primaire)
+    }
+}
+/* sub-title */
+
+.sub-title{
+    background-position: fixed;
+    padding: 15px 0;
+    color: #fff;
+    @inclure box-shadow(0px 2px 1px 0px #656565);
+    
+    
+}
+/* page */
+.page{
+    background: #fff;
+    border-radius: 3px;
+    padding: 12px;
+    @include box-shadow(0 1px 2px rgba(0,1,1,.12));
+    
+    @include animate(bounce-in-left, .6s, 450ms);
+    
+}
+/* mise en page du contenu du site */
+section{
+    overflow: hidden;
+    
+    i{margin: 0 7px;}
+}
+
+.contenu{
+    background: #f5f5f5;
+    padding: 60px 0;
+    
+}
+
+
+
+article {
+    
+    .blog{
+        visibility: hidden;
+        background: #fff;
+        border-radius: 3px;
+        padding: 12px;
+        @include box-shadow(0 1px 2px rgba(0,1,1,.12));
+        
+        margin-bottom: 30px}
+
+    .blog:first-child{
+        visibility: visible; 
+        @include animate(flip-in-x, .6s, 0ms)}
+    
+    .effet{
+        visibility: visible; 
+        @include animate(flip-in-x, .6s, 0ms)}
+    
+    .titre{
+        margin-bottom: 20px;
+        line-height: 1}
+}
+
+.icon-test{
+    padding: 0;margin: 0;
+    text-align: center;
+    height: 120px;
+    
+    p{font-size: 12px;margin-top: 12px;}
+    span{font-size: 45px;display: block; line-height: 1}
+
+}

@@ -1,0 +1,46 @@
+/* bloc header */
+
+header{ background-color: $yellow;padding-top: 10px;@inclure box-shadow(0px 2px 1px 0px #656565);
+    
+    .logo{color: #fff;
+        font-size: 45px;
+        line-height: 1;
+    }     
+    
+    
+    
+   .nav {position: relative;margin: 20px 0;
+       
+        ul li.navigation {
+            display: none
+            } 
+
+        ul {
+            margin: 0;padding: 0
+            }
+       
+        li {
+            margin: 0 5px 10px 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            } 
+       
+        a {
+            font-size: $size * 1;  
+            padding: 3px 12px;
+            text-decoration: none;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-left: 20px
+            } 
+       
+       a.active:before {
+           font-family: flaticon;
+            font-style: normal;
+           margin-right: 5px;
+           content: '\e000';
+           margin-left: -20px;
+        }   
+   }
+}
