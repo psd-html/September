@@ -1,6 +1,11 @@
  <aside class="bloc-4">
    <?php if(!defined('PLX_ROOT')) exit; ?>
 
+   <div class="widget">
+        <h4>Tester les thèmes</h4>
+         <?php eval($plxShow->callHook('MySkinSelect')) ?>
+    </div>
+
     <div class="widget">
        <!-- les catégories --> 
         <h4><?php $plxShow->lang('CATEGORIES'); ?></h4>
